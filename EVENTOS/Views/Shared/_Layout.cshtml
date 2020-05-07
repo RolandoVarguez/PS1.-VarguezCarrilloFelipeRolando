@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - EVENTOS MEXICO</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <!--BARRA DE NAVEGACION INICIO-->
+
+    <div class=" pos-f-t">
+
+        <nav class="navbar navbar-dark bg-dark>
+            <button class="barra navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <span class="navbar-toggler-icon"></span>
+                <h5 class="t10 text-white">EVENTOS NACIONALES</h5>
+            </button>
+        </nav>
+        <div class=" barra2 collapse" id="navbarToggleExternalContent">
+            <div class="barra p-4">
+                <h3>
+                    <a class="acomodo1 nav-link" href="@Url.Action("Index", "Home")">Inicio</a>
+                    <a class="acomodo1 nav-link" href="@Url.Action("About", "Home")">Quienes Somos</a>
+                    <a class="acomodo1 nav-link" href="@Url.Action("Contact", "Home")">Contacto</a>
+                    <a class="acomodo1 nav-link" href="@Url.Action("Index", "Ciudads")">Ciudades</a>
+                    <a class="acomodo1 nav-link" href="@Url.Action("Index", "Eventoes")">Eventos</a>
+                    <br />
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!--BARRA DE NAVEGACION FIN-->
+    <div class="container body-content">
+        @RenderBody()
+
+        <footer>
+            <hr /><hr />
+            <hr class="dos" />
+            <h4 class="Titulo3"> <p>&copy; @DateTime.Now.Year - Design by Rolando Varguez</p></h4>
+
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

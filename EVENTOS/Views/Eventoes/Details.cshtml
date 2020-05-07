@@ -1,0 +1,86 @@
+﻿@model EVENTOS.Models.Evento
+
+@{
+    ViewBag.Title = "Detalles del Evento";
+}
+
+    <div class="Fondo7">
+        <br /><br />
+        <h1 class="T7 text-center">Detalles del Evento</h1>
+        <hr  class="uno"/>
+    </div>
+
+    <div class="tarjeta7">
+        <div class="container">
+
+            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><b>Detalles del Evento</b></div>
+                <div class="card-body text-dark">
+
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Evento:
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.NombreEvento)
+                        </dd>
+
+                        <dt>
+                            Categoria:
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.CategoriaEvento)
+                        </dd>
+
+                        <dt>
+                            Fecha:
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.FechaEvento)
+                        </dd>
+
+                        <dt>
+                            Lugar:
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.LugarEvento)
+                        </dd>
+
+                        <dt>
+                            Hora:
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.HoraEvento)
+                        </dd>
+
+                        <dt>
+                            Capacidad:
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.CapacidadEvento)
+                        </dd>
+
+                    </dl>
+
+
+                </div>
+            </div>
+
+            <hr />
+           
+        </div>
+    </div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+               
+ <p>
+                                                               
+  @Html.ActionLink("Editar Evento", "Edit", new { id = Model.Id }, new { @class = "btn btn-outline-danger" })
+  @Html.ActionLink("Volver a la Lista de Eventos", "Index", null , new { @class= "btn btn-outline-success" })
+ 
+ </p>

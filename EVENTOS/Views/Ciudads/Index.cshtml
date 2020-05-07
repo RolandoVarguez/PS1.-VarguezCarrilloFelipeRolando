@@ -1,0 +1,49 @@
+﻿@model IEnumerable<EVENTOS.Models.Ciudad>
+
+@{
+    ViewBag.Title = "Ciudades";
+}
+
+<div class="Fondo8 text-center">
+    <br /><br />
+    <h1>Ciudades Registradas para Eventos</h1>
+    <hr class="uno" />
+</div>
+
+<div class="tablaanchoEvento">
+    <table class="table">
+        <tr>
+            <th>
+                Ciudad
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NombreCiudad)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-outline-light" }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.Id }, new { @class = "btn btn-outline-light" })
+                </td>
+            </tr>
+
+        }
+
+            
+    </table>
+
+    
+</div>
+
+<div class="AgrC">
+    <p>
+       <a href="https://localhost:44314/" class="btn btn-lg btn-outline-danger">Volver a la Principal</a> |
+        @Html.ActionLink("Agregar una Ciudad", "Create", null, new { @class = "btn btn-lg btn-outline-dark" })
+    </p>
+</div>
+
+        

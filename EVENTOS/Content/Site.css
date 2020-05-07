@@ -1,0 +1,470 @@
+﻿
+body {
+    
+    margin:0;
+    padding:0;
+   
+   
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+
+/*
+.dl-horizontal dt {
+    white-space: normal;
+}
+*/
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* PERSONALIZACION INICIO */
+
+.acomodo1 {
+    color: white;
+    float:left;
+ 
+}
+
+.t10
+{
+    margin-top:10px;
+}
+
+.barra
+{
+    background-color:black;
+}
+
+.barra2 
+{
+    background-color: black;
+}
+
+footer
+{
+    font-family: 'Arial Rounded MT';
+    color: aliceblue;
+    background-color: black;
+    width: 117.4%;
+    height: 110px;
+    margin-left: -130px;
+    margin-top:68px
+    
+}
+.Titulo3
+{
+    margin-left:90px;
+}
+
+.dos 
+{
+    margin-top: 10px;
+    border-radius: 12px;
+    border-color: purple;
+    border-width: 10px
+}
+
+.carousel-inner
+{
+    
+    width:119.2%;
+    height:450px;
+    margin-left:-150px;
+}
+
+.navbar
+{
+    background-color:purple;
+    font-family:'Arial Rounded MT';
+}
+
+.d-block
+{
+    width:124.3%;
+}
+
+.NextEvent {
+    margin-top: 10px;
+    font-family: 'Arial Rounded MT';
+    color:white;
+    background-color:black;
+    margin-bottom:10px;
+    margin-left:-150px;
+    width:550px;
+}
+
+.card
+{
+    float:left;
+    margin-right:40px;
+    margin-left:100px;
+    margin-top:30px;
+}
+
+.card-img-top 
+{
+    width: 100%;
+    height: 200px;
+ 
+}
+
+.E1
+{
+    width:100%;
+    height:650px;
+}
+
+.Fondo1
+{
+    background-color:purple;
+    width:116.4%;
+    height:500px;
+    margin-left:-120px;
+}
+
+.nota 
+{
+    margin-top: 10px;
+    font-family: 'Arial Rounded MT';
+    color: white;
+    background-color: black;
+    margin-bottom: -57px;
+    margin-left: 624px;
+    width: 550px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* INDEX - EVENTOS */
+
+.Fondo2 
+{
+    font-family:'Arial Rounded MT';
+    color:aliceblue;
+    background-color: black;
+    width: 117.4%;
+    height: 150px;
+    margin-left: -130px;
+   
+   
+}
+
+.Titulo2
+{
+    text-align:center;
+    
+}
+
+.uno
+{
+    border-radius:12px;
+    border-color:purple;
+    border-width:10px
+}
+
+.opciones3
+{
+    margin-left:-15px;
+}
+
+.tablaancho3
+{
+    width:1150px;
+    margin-left:-20px;
+    margin-top:25px;
+
+}
+
+.table {
+    background-color: purple;
+    color: white;
+  
+    border-radius: 15px;
+    text-align: center;
+ 
+}
+
+.botones1
+{
+    color:white;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* PERSONALIZACION CREAR - EVENTOS */
+
+.Fondo3
+{
+    font-family: 'Arial Rounded MT';
+    color: aliceblue;
+    background-color: black;
+    width: 116.7%;
+    height: 150px;
+    margin-left: -120px;
+}
+
+.form-group
+{
+    font-family:'Arial Rounded MT';
+    margin-left:50px;
+    float:left;
+    margin-bottom:20px;
+    font-size:large;
+  
+}
+
+.Fondo4 {
+    font-family: 'Arial Rounded MT';
+    color: aliceblue;
+    border-width:55px;
+    border-color:purple;
+    color:black;
+    width: 80%;
+    height: 300px;
+    margin-left: 90px;
+    float:left;
+    margin-top:45px;
+    margin-bottom:-700px;
+  
+}
+
+.botonCrear
+{
+    margin-top:300px;
+    margin-left:700px;
+    margin-bottom:0px;
+    margin-right:-150px;
+}
+
+.botonVolver
+{
+    margin-top:-685px;
+    margin-left:140px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* PERSONALIZACION ELIMINAR - EVENTOS */
+
+.Fondo5 {
+    font-family: 'Arial Rounded MT';
+    color: aliceblue;
+    background-color: black;
+    width: 116.5%;
+    height: 150px;
+    margin-left: -120px;
+}
+
+.T5
+{
+    text-align:center;
+    margin-left:50px;
+    margin-top:25px;
+}
+
+.Eliminar5
+{
+    margin-left:600px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* PERSONALIZACION EDITAR - EVENTOS */
+
+.Fondo6 {
+    font-family: 'Arial Rounded MT';
+    color: aliceblue;
+    background-color: black;
+    width: 113.2%;
+    height: 150px;
+    margin-left: -75px;
+}
+
+.btnEditar
+{
+    margin-left:800px;
+    margin-top:75.5px;
+    margin-bottom:-130px;
+}
+
+.botonVolver2
+{
+    margin-left: 50px;
+    margin-top: 45.5px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* PERSONALIZACION DETALLES - EVENTOS */
+
+.Fondo7
+{
+    font-family: 'Arial Rounded MT';
+    color: aliceblue;
+    background-color: black;
+    width: 111.6%;
+    height: 150px;
+    margin-left: -65px;
+}
+
+.tarjeta7
+{
+    margin-top:-35px;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* INDEX - CIUDADES */
+
+.Fondo8 {
+    font-family: 'Arial Rounded MT';
+    color: aliceblue;
+    background-color: black;
+    width: 117.4%;
+    height: 150px;
+    margin-left: -130px;
+}
+
+.tablaanchoEvento {
+    width: 650px;
+    margin-left: -80px;
+    margin-top: 25px;
+    margin-bottom:-10px;
+    text-align: center;
+    font-family: 'Arial Rounded MT';
+    font-size:medium;
+    
+}
+
+.AgrC
+{
+    margin-left:680px;
+    margin-top:-200px;
+    margin-bottom:160px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* EDITAR - CIUDADES */
+
+.tres {
+    border-radius: 12px;
+    border-color: black;
+    border-width: 5px;
+}
+
+.btnSaver
+{
+    margin-left:500px;
+}
+
+.btnQuitar
+{
+   margin-left:580px;
+   margin-top:5px;
+   margin-bottom:-10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* EDITAR - CIUDADES */
+
+.btnVolver9
+{
+    margin-left:-550px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* AGREGAR - CIUDADES */
+
+.Fondo9
+{
+    font-family: 'Arial Rounded MT';
+    color: aliceblue;
+    background-color: black;
+    width: 112.5%;
+    height: 150px;
+    margin-left: -72px;
+}
+
+.V9
+{
+    margin-top:-590px;
+    margin-left:5px;
+    margin-bottom:-600px;
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* CONTACTANOS */
+
+.Next
+{
+    margin-top: 10px;
+    font-family: 'Arial Rounded MT';
+    color: white;
+    background-color: black;
+    margin-bottom: 10px;
+    margin-left: -75px;
+    width: 550px;
+    height:95px;
+}
+
+.imgTam
+{
+    width:120px;
+    height:130px;
+    
+}
+
+.contacto1
+{
+    margin-top:25px;
+    margin-left:45px;
+}
+
+.contacto2
+{
+    margin-left: 450px;
+    margin-top:-130px;
+   
+}
+
+.contacto3 
+{
+    margin-left: 885px;
+    margin-top:-149px;
+}
+
+.nota2 {
+    margin-top: 25px;
+    font-family: 'Arial Rounded MT';
+    color: white;
+    background-color: black;
+    margin-bottom: -57px;
+    margin-left: 624px;
+    width: 550px;
+    height: 95px;
+}
+
+.logo
+{
+    width:250px;
+    height:200px;
+    margin-left:700px;
+    margin-bottom:-40px;
+}

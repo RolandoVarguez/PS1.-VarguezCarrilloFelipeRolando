@@ -1,0 +1,111 @@
+﻿@model EVENTOS.Models.Evento
+
+@{
+    ViewBag.Title = "Crear un Evento";
+}
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    <div class="Fondo3">
+        <br /><br />
+        <h1 class="Titulo2">Creacion de un Evento</h1>
+        <hr class="uno" />
+    </div>
+
+   
+          <div class="Fondo4">
+     
+        <div class="container">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                 <label class="col-md-2">Evento</label>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.NombreEvento, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.NombreEvento, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2">Categoria</label>              
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.CategoriaEvento, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CategoriaEvento, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2">Fecha</label>
+                <div class="col-md-12">
+                    <input type="date" name="FechaEvento" value="" class="form-control" />
+
+                </div>
+            </div>
+
+            <!--AGREGAR FORANEA DE CIUDAD-->
+            <div class="form-group">
+                <label class="control-label col-md-2">Ciudad:</label>
+                <div class="col-md-12">
+                    <select name="CityID" class="form-control">
+                        <option>Elige una Ciudad:</option>
+                        @foreach (var item in ViewBag.Ciudades)
+                        {
+                            <option value="@item.Id">@item.NombreCiudad</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4">Ubicacion</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.LugarEvento, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.LugarEvento, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2">Hora</label>
+                <div class="col-md-12">
+                    <input type="time" name="HoraEvento" value="" class="form-control" />
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2">Capacidad</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.CapacidadEvento, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CapacidadEvento, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+
+    <div class="form-group">
+        <div class=" botonCrear col-md-offset-2 col-md-12">
+            <input  type="submit" value="Crear un Evento" class="btn btn-md btn-outline-dark" />
+        </div>
+    </div>
+ 
+  
+
+    <br />
+}
+
+<div >
+    @Html.ActionLink("Volver a la Lista de Eventos", "Index", null, new { @class = " botonVolver btn btn- btn-outline-dark" })
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

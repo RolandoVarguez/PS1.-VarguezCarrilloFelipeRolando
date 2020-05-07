@@ -1,0 +1,28 @@
+﻿@model EVENTOS.Models.Evento
+
+@{
+    ViewBag.Title = "Eliminar Evento";
+}
+    <div class="Fondo5">
+        <br />
+        <h1 class="T5">Confirmar Eliminacion del Evento</h1>
+        <hr class="uno"/>
+
+    </div>
+    <div>
+       
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <br><br />
+                <h2>¿Estas seguro de eliminar el evento "@Html.DisplayFor(model => model.NombreEvento)"?</h2>
+            <br><br><br>
+                    <div class="form-actions no-color">
+                        @Html.ActionLink("Volver a la Lista de Eventos ", "Index", null, new { @class = " Volver5 btn btn-lg btn-outline-info" })
+                        <input type="submit" value="Eliminar este Evento" class=" Eliminar5 btn btn-lg btn-outline-danger" /> 
+
+                    </div>
+                  
+        }
+    </div>
